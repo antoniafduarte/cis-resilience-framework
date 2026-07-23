@@ -1,0 +1,10 @@
+EXPORT_CIS — Subsystem B
+Scenario,B1 Rt,B2 Rv,B3 deficit performance,B4 recovery,B5 SSC frequency,Demand at source (hm³),Deficit (hm³),Minimum storage (hm³),Interpretation
+50% ISW + high efficiency,1,1,1,1,0,60.174044954313295,0,10.868174584636217,No service failure
+50% ISW + low efficiency,0.975,0.9618557330124665,0.0862143636921503,0.3333333333333333,0,76.46706113338598,2.9167799956239073,0.07733013753833808,Failures occur
+Ensemble mean,1,1,1,1,0,65.40011669174552,0,7.487508675575441,No service failure
+90% ISW + high efficiency,1,1,1,1,0,58.21285506387174,0,12.40726475879523,No service failure
+90% ISW + low efficiency,1,1,1,1,0,66.74650561541108,0,6.715096899642966,No service failure
+Arithmetic average,0.99375,0.9904639332531167,0.7715535909230375,0.8333333333333333,0,65.40011669174552,0.7291949989059768,7.516966595153187,Mean of the four complete GIR variants
+Source workbook,RI_SB_reservoir_service_tool_v1.xlsx,Source sheet,B_EXPORT_TABLE
+Source range,A3:J8,External links,None

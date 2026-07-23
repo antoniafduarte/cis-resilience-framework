@@ -1,0 +1,10 @@
+EXPORT_CIS — Subsystem D
+Code,Indicator,Raw value,Unit,Orientation,Temporal basis,Source range,Use
+D1,Energy per irrigated area,1041.7706584759974,kWh ha⁻¹,Negative,2018–2025 mean,SD_SE_CALC_INDICATORS!Z6:Z13,Baseline
+D2,Energy per supplied volume,0.22960575375370904,kWh m⁻³,Negative,2018–2025 mean,SD_SE_CALC_INDICATORS!AA6:AA13,Baseline
+D3,Energy per abstracted volume,0.21587532967923723,kWh m⁻³,Negative,2018–2025 mean,SD_SE_CALC_INDICATORS!AB6:AB13,Baseline
+D4,Energy cost per irrigated area,125.02781052037633,€ ha⁻¹,Negative,2016–2025 mean,SD_SE_CALC_INDICATORS!AC4:AC13,Baseline
+D5,Energy cost per supplied volume,0.02726971002447103,€ m⁻³,Negative,2016–2025 mean,SD_SE_CALC_INDICATORS!AD4:AD13,Baseline
+D6,Energy cost per abstracted volume,0.025638981365007658,€ m⁻³,Negative,2016–2025 mean,SD_SE_CALC_INDICATORS!AE4:AE13,Baseline
+D7,Renewable energy contribution,0.09258303761657559,-,Positive,2025 snapshot,SD_SE_CALC_INDICATORS!AF13,Baseline
+D8,Pump redundancy,0.8061189795333942,-,Positive,2016–2025 mean,SD_SE_CALC_INDICATORS!AG4:AG13,Baseline

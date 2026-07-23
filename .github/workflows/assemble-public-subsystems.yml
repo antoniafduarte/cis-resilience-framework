@@ -1,0 +1,42 @@
+name: Assemble public subsystem workbooks
+
+on:
+  push:
+    paths:
+      - 'staging/public-subsystems.ready'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct and extract workbooks
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p tools/subsystems/public
+          cat staging/public-subsystems.tar.gz.b64.part-* > /tmp/public-subsystems.tar.gz.b64
+          base64 --decode /tmp/public-subsystems.tar.gz.b64 > /tmp/public-subsystems.tar.gz
+          tar -xzf /tmp/public-subsystems.tar.gz -C tools/subsystems/public
+          rm -f staging/public-subsystems.tar.gz.b64.part-* staging/public-subsystems.ready
+
+      - name: Commit assembled files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tools/subsystems/public staging
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+          else
+            git commit -m 'Add public subsystem workbooks'
+            git push
+          fi

@@ -1,0 +1,28 @@
+# Microsoft Office temporary and lock files
+~$*.xlsx
+~$*.xlsm
+~$*.docx
+~$*.pptx
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Windows and macOS system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local working folders and unpublished sensitive data
+working/
+private/
+raw_private_data/
