@@ -1,0 +1,12 @@
+EXPORT_CIS — Subsystem E
+Code,Indicator,Raw value,SD,Min,Max,Unit,Orientation,Calculation basis
+E1,Gross irrigation requirement,452.76810720721554,24.697130577642645,414.7552896090753,491.8500183559795,mm,Negative,Annual mean across the four GIR variants
+E2,Peak demand factor,0.34661051013978633,0.012566287630931732,0.3275516338279829,0.36523811591452115,-,Negative,Peak monthly demand / annual GIR
+E3,Peak demand staggering,0.7631800426911478,0.025438125745842286,0.7266204661539347,0.8004303088858115,-,Positive,Temporal dispersion of peak demand
+E4,Irrigation system factor,1.0071582459261794,0.022820253382277733,0.9741397099444262,1.0392296863549657,-,Negative,Weighted irrigation-technology factor
+E5,On-farm technology and control,0.5662747967366551,0.02918152044950135,0.5214999029450421,0.608381967931122,-,Positive,Weighted on-farm control and technology score
+E6,Water-deficit and salinity tolerance,0.5488383340573893,0.015183253859853262,0.522524900377132,0.5685076985983851,-,Positive,Weighted crop tolerance score
+E7,Share of permanent crops,0.19738238295411825,0.012385715889282658,0.17646641816517758,0.2161320288721492,-,Negative,Area share of permanent crops
+E8,Soil-water buffering capacity,79.54139593018347,2.349492125246043,76.3752271687678,82.88744074637422,mm,Positive,Area-weighted readily available soil water
+E9,Alternative local access to storage,0.4169009184857747,0.02795755996318642,0.3714779309705511,0.4602410521860044,-,Positive,Area share with local storage access
+E10,Chill requirement adequacy indicator,0.9681641013035997,0.006834712352118181,0.957804789993853,0.977382894282577,-,Positive,Crop-area-weighted chill adequacy
