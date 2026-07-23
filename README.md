@@ -1,60 +1,65 @@
 # CIS Resilience Framework
 
-Spreadsheet-based framework for diagnosing resilience in Mediterranean reservoir-fed collective irrigation systems.
+Public spreadsheet implementation of an integrated, multi-subsystem methodology for diagnosing resilience in Mediterranean reservoir-fed collective irrigation systems.
 
-## Scope
+## Framework structure
 
-The framework integrates six interacting subsystems:
+The framework represents the irrigation-service chain through six interacting subsystems:
 
-- **A** — Water-resource resilience
-- **B** — Reservoir and service performance
-- **C** — Pressurised irrigation-network performance
-- **D** — Pumping and energy resilience
-- **E** — Farm-level adaptive capacity
-- **F** — Drought-management capacity
+- **A — Water-resource resilience**
+- **B — Reservoir and service performance**
+- **C — Pressurised irrigation-network performance**
+- **D — Pumping and energy resilience**
+- **E — Farm-level adaptive capacity**
+- **F — Drought-management capacity**
 
-## Repository structure
+Each subsystem has a detailed source workbook and a compact public workbook containing a documented export output, source register, formula map and quality checks. The integrated workbook applies threshold-based normalisation and dimension-balanced weighting. The analytical V2 workbook separates interannual variability, GIR ensemble uncertainty, pre/post-expansion comparison, correlation/redundancy screening and methodological sensitivity.
 
-```text
-tools/
-  subsystems/     Calculation workbooks for Subsystems A–F
-  integrated/     Integrated CIS normalisation and aggregation tool
-  analysis/       Variability, ensemble, pre/post-expansion and sensitivity analyses
-outputs/          Publication-ready tables and machine-readable exports
-docs/             Architecture, formula map, data dictionary and change log
-```
+## Recommended workflow
 
-## Calculation architecture
+1. Open the detailed source workbook for the subsystem being assessed.
+2. Enter or update source data in the designated input sheets.
+3. Review the calculation sheets and quality checks.
+4. Use the corresponding public workbook to inspect the exported indicator values and formula provenance.
+5. Transfer the approved values to the integrated tool.
+6. Use the analytical V2 workbook for variability, uncertainty, weighting and sensitivity analyses.
 
-Each subsystem workbook retains its original inputs, formulas and diagnostic calculations and includes an `EXPORT_CIS` sheet with standardised outputs. The integrated and analytical tools import those outputs as embedded values, while recording the source workbook, sheet, cell and version. This avoids fragile external workbook links while preserving traceability.
+No external workbook links are required in the public tools. Source workbook, sheet and range are documented explicitly.
 
-The principal aggregation method is **dimension-balanced weighting**. Equal-indicator weighting is retained as a methodological sensitivity test.
+## Repository folders
 
-## Visual identity
+- `tools/subsystems/source/` — detailed subsystem calculation workbooks
+- `tools/subsystems/public/` — compact public exports and audit workbooks
+- `tools/integrated/` — integrated normalisation and aggregation tool
+- `tools/analysis/` — V2 analytical and publication-output workbook
+- `docs/` — workflow, terminology, style guide, file manifest and progress report
 
-All spreadsheets and documentation use a consistent palette:
+## Visual convention
 
-- dark blue — titles and primary headers;
-- yellow — editable inputs and attention fields;
-- grey — calculations, notes and secondary information;
-- white — results and reading areas.
+The spreadsheets use a consistent palette:
 
-## Reproducibility
+- **Dark blue** — titles and primary headers
+- **Yellow** — inputs, provenance and attention fields
+- **Grey** — calculation, reference and locked areas
+- **White** — outputs and reading areas
 
-The public release will include:
+## Methodological notes
 
-- subsystem workbooks A–F;
-- integrated resilience tool;
-- analytical and sensitivity tool;
-- source register and formula map;
-- standardised output sheets;
-- publication-ready tables;
-- documentation and version history.
+- Normalised classes use equal 0.25 intervals: Low, Moderate, Good and Excellent.
+- The primary aggregation uses dimension-balanced weighting.
+- Equal-indicator weighting is retained as a methodological sensitivity test.
+- The four GIR variants are maintained as complete scenario chains.
+- Interannual variability, GIR ensemble uncertainty and methodological sensitivity are reported separately.
+- Thresholds are diagnostic and context-specific rather than universal standards.
 
-## Status
+## Current status
 
-Repository structure under preparation. Spreadsheet tools will be added after formula, source and quality-control validation.
+A draft public release is being assembled in pull request #1. The public/audit workbooks for Subsystems A–F and the analytical V2 workbook have been generated and quality-checked locally. Binary files are added to the repository only after transfer-integrity validation.
 
-## License
+## Citation and versioning
 
-Software and spreadsheet implementations are released under the MIT License. Data ownership and reuse conditions are documented separately where required.
+Please cite the associated manuscript and identify the workbook version used. A formal citation and DOI will be added after publication and repository archiving.
+
+## Licence
+
+The code and spreadsheet implementation are released under the MIT License. Users remain responsible for checking local thresholds, service standards, data coverage and indicator applicability before transferring the framework to another irrigation system.
