@@ -1,0 +1,7 @@
+EXPORT_CIS — Subsystem C
+Indicator,Symbol,Raw value,Unit,Orientation,Source sheet,Source cell,Use
+Network pressure reliability,Rnet^C,0.9819737926182841,-,Positive,C_FINAL_TOOL,B22,C1
+Hydrant pressure coverage,Rcov^C,0.9465585443037974,-,Positive,C_FINAL_TOOL,C22,C2
+Overall relative pressure deficit,RPD^C,0.39790148373247947,% of Pmin,Negative,C_FINAL_TOOL,D22,C3
+Critical relative pressure deficit,CRPD80^C,0.3442534490523983,-,Negative,C_FINAL_TOOL,E22,C4
+Maximum relative pressure deficit,MRPD^C,0.43260758789703413,-,Negative,C_FINAL_TOOL,F22,C5
