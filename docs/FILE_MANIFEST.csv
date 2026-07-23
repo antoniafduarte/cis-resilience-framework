@@ -1,0 +1,13 @@
+path,role,local_status,repository_status
+tools/subsystems/public/RI_SA_water_availability_tool_v1_1_public.xlsx,public audit workbook,completed and QC-checked,pending validated upload
+tools/subsystems/public/RI_SB_reservoir_service_tool_v1_1_public.xlsx,public audit workbook,completed and QC-checked,pending validated upload
+tools/subsystems/public/RI_SC_conveyance_distribution_tool_v1_1_public.xlsx,public audit workbook,completed and QC-checked,uploaded to draft branch
+tools/subsystems/public/RI_SD_energy_performance_tool_v1_1_public.xlsx,public audit workbook,completed and QC-checked,pending validated upload
+tools/subsystems/public/RI_SE_on_farm_performance_tool_v1_1_public.xlsx,public audit workbook,completed and QC-checked,pending validated upload
+tools/subsystems/public/RI_SF_drought_management_tool_v1_1_public.xlsx,public audit workbook,completed and QC-checked,pending validated upload
+tools/integrated/CIS_integrated_resilience_framework_tool_v1.xlsx,integrated tool,packaged locally,pending validated upload
+tools/analysis/CIS_integrated_resilience_framework_tool_v2_1_public.xlsx,analytical tool,completed and QC-checked,pending validated upload
+README.md,documentation,completed,uploaded to draft branch
+docs/WORKFLOW.md,documentation,completed,uploaded to draft branch
+docs/STYLE_GUIDE.md,documentation,completed,uploaded to draft branch
+docs/PROGRESS.md,documentation,completed,uploaded to draft branch
