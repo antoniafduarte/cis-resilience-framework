@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "CIS Resilience Framework"
+type: software
+authors:
+  - family-names: Ferreira
+    given-names: Antónia Fortes Duarte
+  - family-names: Rolim
+    given-names: João
+  - family-names: Brandão
+    given-names: Cláudia
+  - family-names: Cameira
+    given-names: Maria do Rosário
+repository-code: "https://github.com/antoniafduarte/cis-resilience-framework"
+url: "https://github.com/antoniafduarte/cis-resilience-framework"
+license: "SEE LICENSE FILE"
+version: "1.0.0"
+date-released: "2026-07-28"
+keywords:
+  - irrigation resilience
+  - collective irrigation systems
+  - drought
+  - water scarcity
+  - performance indicators
+  - decision support
+abstract: >-
+  A modular Excel-based framework for assessing the resilience of pressurised
+  collective irrigation systems through six subsystem tools and one integrated
+  assessment workbook.
