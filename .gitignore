@@ -1,0 +1,21 @@
+# Temporary Microsoft Office files
+~$*.xlsx
+~$*.xlsm
+~$*.docx
+~$*.pptx
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Local working directories
+_private/
+working/
+drafts/
