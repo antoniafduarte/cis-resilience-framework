@@ -2,13 +2,25 @@
 
 This folder contains the autonomous Excel workbook used to integrate the results of the six subsystem assessments into a common resilience profile.
 
-## Main workbook
+## Current public version
 
 `CIS_integrated_resilience_framework_tool_v3_public.xlsx`
+
+Version 3 is the current public release of the integrated framework and supersedes earlier draft versions. Users should apply this workbook for new assessments and cite the exact file name and version used.
 
 ## Purpose
 
 The integrated tool consolidates the results from Subsystems A–F while retaining the diagnostic information provided by individual indicators, operational dimensions and subsystem scores.
+
+## Version 3 features
+
+- Integration of the six subsystem assessments (A–F)
+- Indicator-, dimension- and subsystem-level aggregation
+- Overall CIS resilience score
+- Comparative dashboards and resilience profiles
+- Internal completeness, consistency and validation checks
+- Support for documented indicator omissions and local adaptations
+- Recording of data sources and confidence information
 
 ## Required inputs
 
